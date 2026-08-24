@@ -1,18 +1,167 @@
-# React + Vite
+# ✈️ British Airways Virtual
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### A modern virtual airline management platform built for Infinite Flight pilots.
 
-Currently, two official plugins are available:
+British Airways Virtual is a web-based virtual airline platform designed to manage pilots, flights, bookings, applications, and PIREPs through a modern React interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built with **React**, **Vite**, and a **REST API powered by JSON Server**.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 Overview
 
-Note: This will impact Vite dev & build performances.
+British Airways Virtual provides a centralized platform for virtual airline operations, allowing pilots to manage their profiles, explore scheduled flights, book flights, and submit PIREPs.
 
-## Expanding the ESLint configuration
+The platform also includes an administrative interface for managing pilots, applications, flights, bookings, and PIREP reviews.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+### 👨‍✈️ Pilot Management
+
+- Pilot registration and login
+- Pilot profiles and ranks
+- Flight hours and flight statistics
+- Pilot status management
+
+### ✈️ Flight Operations
+
+- View scheduled flights
+- Flight details and route information
+- Flight booking system
+- Personal flight management
+
+### 📝 PIREP System
+
+- Submit completed flight reports
+- Record flight times and details
+- Flight bonus information
+- PIREP approval and rejection
+- Review comments from administrators
+
+### 📋 Application Management
+
+- Submit pilot applications
+- Application approval and rejection
+- Application status tracking
+
+### 🛡️ Administration
+
+- Administrative dashboard
+- Pilot management
+- Flight management
+- Booking management
+- PIREP review and management
+- News and announcements
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,vite" />
+</p>
+
+### API & Data
+
+<p>
+  <img src="https://skillicons.dev/icons?i=json" />
+</p>
+
+- **REST API**
+- **JSON Server**
+- **Fetch API**
+
+### Development Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+- Git
+- GitHub
+- Visual Studio Code
+
+---
+
+## 📁 Project Structure
+
+```text
+british-airways-virtual/
+│
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── AdminLayout.jsx
+│   │   ├── AdminNavbar.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── PublicLayout.jsx
+│   │   └── ScrollReveal.jsx
+│   │
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Admin.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── FlightDetails.jsx
+│   │   ├── Flights.jsx
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── MyFlights.jsx
+│   │   ├── PilotProfile.jsx
+│   │   ├── Pilots.jsx
+│   │   ├── Pirep.jsx
+│   │   ├── Profile.jsx
+│   │   └── Register.jsx
+│   │
+│   ├── services/
+│   │   └── pilotService.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── db.json
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Aravindhan-M02/british-airways-virtual.git
+
+---
+
+## 📌 Project Status
+
+🚧 **Currently under development**
+
+British Airways Virtual is an ongoing project. New features, improvements, and operational tools will be added over time.
+
+---
+
+## 👨‍💻 Developer
+
+**Aravindhan M**
+
+Full Stack Developer
+
+- GitHub: [@Aravindhan-M02](https://github.com/Aravindhan-M02)
+
+---
+
+⭐ If you find this project interesting, consider giving it a star!
