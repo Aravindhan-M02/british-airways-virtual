@@ -186,17 +186,17 @@ Vite will provide the local development URL in the terminal.
 
 ## 🌐 Live Demo
 
-🚧 **Coming soon**
+[🌐 Visit British Airways Virtual](https://british-airways-virtual.onrender.com)
 
-The project is currently running locally with React, Vite, and JSON Server.
+💻 **Source Code:** [GitHub Repository](YOUR_GITHUB_REPOSITORY_URL)
 
 ---
 
 ## 📌 Project Status
 
-🚧 **Currently under development**
+🚀 **Active Development**
 
-British Airways Virtual is an ongoing project. New features, improvements, and operational tools will be added over time.
+The core British Airways Virtual platform is fully functional and deployed. Development is ongoing, with new features, improvements, and operational tools being added regularly.
 
 ---
 
