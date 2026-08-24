@@ -211,3 +211,13 @@ Full Stack Developer
 ---
 
 ⭐ If you find this project interesting, consider giving it a star!
+
+## ⚠️ Disclaimer
+
+British Airways Virtual is an independent, unofficial virtual airline project created for flight simulation and educational purposes.
+
+This project is **not affiliated with, endorsed by, sponsored by, or officially connected to British Airways or International Airlines Group (IAG)**.
+
+The British Airways name, logo, trademarks, and related brand assets belong to their respective owners and are used here for identification and non-commercial simulation purposes.
+
+This project is not intended to represent the real-world British Airways airline or its operations.
