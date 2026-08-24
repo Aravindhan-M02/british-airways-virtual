@@ -1,0 +1,307 @@
+.pirep-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.pirep-header {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.pirep-header h1 {
+  color: #071d49;
+  font-size: 46px;
+  margin: 12px 0 18px;
+}
+
+.pirep-header p:last-child {
+  color: #666;
+  font-size: 17px;
+}
+
+/* =========================
+   FLIGHT CARD
+========================= */
+
+.pirep-flight-card {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 9px;
+  padding: 30px;
+}
+
+.pirep-flight-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e9ee;
+}
+
+.pirep-flight-top span:first-child,
+.pirep-flight-info span,
+.pirep-route span {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.pirep-flight-top h2 {
+  margin: 8px 0 0;
+  color: #071d49;
+  font-size: 30px;
+}
+
+.pirep-status {
+  color: #188038;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pirep-route {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+.pirep-route strong {
+  display: block;
+  color: #071d49;
+  font-size: 28px;
+  margin-top: 8px;
+}
+
+.pirep-arrow {
+  color: #071d49;
+  font-size: 25px;
+}
+
+.pirep-flight-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e6e9ee;
+}
+
+.pirep-flight-info strong {
+  display: block;
+  color: #071d49;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.pirep-form {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pirep-section {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 9px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.pirep-section-title {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.pirep-section-title > span {
+  color: #999;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.pirep-section-title h2 {
+  color: #071d49;
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.pirep-section-title p {
+  color: #777;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =========================
+   FIELDS
+========================= */
+
+.pirep-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.pirep-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.pirep-field label {
+  color: #777;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 9px;
+}
+
+.pirep-field input,
+.pirep-field select,
+.pirep-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe4eb;
+  border-radius: 6px;
+  padding: 13px 14px;
+  color: #071d49;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.pirep-field input:focus,
+.pirep-field select:focus,
+.pirep-field textarea:focus {
+  border-color: #071d49;
+}
+
+.pirep-field textarea {
+  resize: vertical;
+}
+
+/* =========================
+   CALCULATED TIME
+========================= */
+
+.calculated-time {
+  margin-top: 25px;
+  padding: 20px 22px;
+  background-color: #f4f6fa;
+  border: 1px solid #e1e5eb;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calculated-time span:first-child {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 7px;
+}
+
+.calculated-time strong {
+  color: #071d49;
+  font-size: 25px;
+}
+
+.calculated-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e9eef6;
+  color: #071d49;
+  font-size: 20px;
+}
+
+/* =========================
+   SUBMIT
+========================= */
+
+.pirep-submit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.pirep-cancel {
+  color: #071d49;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+.pirep-submit-button {
+  border: none;
+  background-color: #071d49;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.pirep-submit-button:hover {
+  background-color: #0d2d6b;
+  transform: translateY(-2px);
+}
+
+.pirep-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .pirep-page {
+    padding: 60px 5%;
+  }
+
+  .pirep-header h1 {
+    font-size: 36px;
+  }
+
+  .pirep-fields,
+  .pirep-flight-info {
+    grid-template-columns: 1fr;
+  }
+
+  .pirep-route {
+    gap: 25px;
+  }
+
+  .pirep-flight-top {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+}

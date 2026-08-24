@@ -1,0 +1,106 @@
+.about-page {
+  min-height: calc(100vh - 70px);
+}
+
+.about-hero {
+  min-height: 65vh;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #071d49,
+    #0d2d6b
+  );
+  color: white;
+}
+
+.about-hero > div {
+  max-width: 850px;
+}
+
+.about-hero .section-tag {
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.about-hero p:last-child {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dce5f5;
+}
+
+.about-story {
+  padding: 110px 8%;
+  background-color: white;
+}
+
+.about-story-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-story-content h2 {
+  color: #071d49;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.about-story-content p:not(.section-tag) {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.mission-section {
+  padding: 110px 8%;
+  background-color: #f4f6fa;
+}
+
+.mission-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 8px;
+  border: 1px solid #e3e7ee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mission-number {
+  color: #071d49;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.mission-card h3 {
+  color: #071d49;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #666;
+  line-height: 1.7;
+}

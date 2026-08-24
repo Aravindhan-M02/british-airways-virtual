@@ -1,0 +1,682 @@
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.pilots-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.pilots-header {
+  max-width: 850px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.pilots-header .section-tag {
+  color: #c8102e;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.pilots-header h1 {
+  color: #071d49;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.pilots-header > p:last-child {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   SECTION HEADERS
+========================================== */
+
+.roster-section-header {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 30px;
+}
+
+.roster-section-header .section-tag {
+  color: #c8102e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.roster-section-header h2 {
+  color: #071d49;
+  font-size: 38px;
+  margin: 0 0 12px;
+}
+
+.roster-section-header p:last-child {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 650px;
+}
+
+
+/* ==========================================
+   STAFF SECTION
+========================================== */
+
+.staff-section {
+  max-width: 1100px;
+  margin: 0 auto 110px;
+}
+
+
+/* ==========================================
+   STAFF DEPARTMENTS
+========================================== */
+
+.staff-departments {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* ==========================================
+   DEPARTMENT CARD
+========================================== */
+
+.department-card {
+  background-color: white;
+  border: 1px solid #e1e5ec;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.department-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.department-open {
+  border-color: #071d49;
+}
+
+
+/* ==========================================
+   DEPARTMENT BUTTON
+========================================== */
+
+.department-button {
+  width: 100%;
+  border: none;
+  background: white;
+
+  padding: 30px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+.department-info {
+  flex: 1;
+}
+
+.department-label {
+  display: block;
+
+  color: #c8102e;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.department-info h3 {
+  color: #071d49;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  margin: 0 0 8px;
+}
+
+.department-info p {
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  margin: 0;
+
+  max-width: 750px;
+}
+
+
+/* ==========================================
+   DEPARTMENT ARROW
+========================================== */
+
+.department-arrow {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #d9dee7;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #071d49;
+
+  font-size: 24px;
+  font-weight: 300;
+
+  margin-left: 25px;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.department-card:hover .department-arrow {
+  border-color: #071d49;
+}
+
+.department-open .department-arrow {
+  background-color: #071d49;
+  color: white;
+  border-color: #071d49;
+}
+
+
+/* ==========================================
+   DEPARTMENT MEMBERS
+========================================== */
+
+.department-members {
+  border-top: 1px solid #edf0f4;
+
+  padding: 22px 32px 28px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  animation: departmentOpen 0.3s ease;
+}
+
+@keyframes departmentOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ==========================================
+   STAFF MEMBER
+========================================== */
+
+.staff-member {
+  background-color: #f7f8fb;
+
+  border: 1px solid #e8ebf0;
+
+  border-radius: 8px;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.staff-member:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==========================================
+   STAFF AVATAR
+========================================== */
+
+.staff-avatar {
+  min-width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #071d49,
+    #17428c
+  );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   STAFF MEMBER INFO
+========================================== */
+
+.staff-member-info {
+  min-width: 0;
+}
+
+.staff-label {
+  color: #c8102e;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.staff-member-info h4 {
+  color: #071d49;
+
+  font-size: 17px;
+
+  margin: 4px 0;
+}
+
+.staff-member-info p {
+  color: #777;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+
+/* ==========================================
+   PILOT SECTION
+========================================== */
+
+.pilots-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   PILOT COUNT
+========================================== */
+
+.pilot-count {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 10px;
+
+  white-space: nowrap;
+}
+
+.pilot-count strong {
+  color: #071d49;
+
+  font-size: 40px;
+
+  font-weight: 800;
+}
+
+.pilot-count span {
+  color: #888;
+
+  font-size: 11px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 800;
+}
+
+
+/* ==========================================
+   PILOT GRID
+========================================== */
+
+.pilots-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* ==========================================
+   PILOT CARD
+========================================== */
+
+.pilot-card {
+  background-color: white;
+
+  border: 1px solid #e3e7ee;
+
+  border-radius: 8px;
+
+  padding: 28px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  display: block;
+}
+
+.pilot-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ==========================================
+   PILOT TOP
+========================================== */
+
+.pilot-card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+}
+
+.pilot-id {
+  color: #888;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.pilot-card h3 {
+  color: #071d49;
+
+  margin: 8px 0 5px;
+
+  font-size: 25px;
+}
+
+.pilot-card-top p {
+  color: #666;
+
+  margin: 0;
+}
+
+
+/* ==========================================
+   PILOT STATUS
+========================================== */
+
+.pilot-status {
+  color: #287a45;
+
+  background-color: #e9f6ed;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   PILOT STATS
+========================================== */
+
+.pilot-stats {
+  display: flex;
+
+  gap: 50px;
+
+  border-top: 1px solid #edf0f4;
+
+  border-bottom: 1px solid #edf0f4;
+
+  margin: 25px 0 18px;
+
+  padding: 18px 0;
+}
+
+.pilot-stats div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.pilot-stats strong {
+  color: #071d49;
+
+  font-size: 24px;
+}
+
+.pilot-stats span {
+  color: #999;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   PILOT FOOTER
+========================================== */
+
+.pilot-footer {
+  color: #999;
+
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   EMPTY PILOT STATE
+========================================== */
+
+.empty-pilots {
+  background-color: white;
+
+  border: 1px solid #e3e7ee;
+
+  border-radius: 8px;
+
+  padding: 60px 30px;
+
+  text-align: center;
+}
+
+.empty-pilots h3 {
+  color: #071d49;
+
+  font-size: 24px;
+
+  margin-bottom: 10px;
+}
+
+.empty-pilots p {
+  color: #777;
+
+  margin: 0;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+  .department-members {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pilots-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .pilots-page {
+    padding: 60px 5%;
+  }
+
+  .pilots-header {
+    margin-bottom: 60px;
+  }
+
+  .pilots-header h1 {
+    font-size: 40px;
+  }
+
+  .roster-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .department-button {
+    padding: 24px;
+  }
+
+  .department-info h3 {
+    font-size: 21px;
+  }
+
+  .department-info p {
+    font-size: 13px;
+  }
+
+  .department-members {
+    grid-template-columns: 1fr;
+    padding: 18px 24px 24px;
+  }
+
+  .pilot-count {
+    margin-top: 10px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .pilots-page {
+    padding: 50px 20px;
+  }
+
+  .pilots-header h1 {
+    font-size: 34px;
+  }
+
+  .roster-section-header h2 {
+    font-size: 30px;
+  }
+
+  .department-button {
+    padding: 20px;
+  }
+
+  .department-arrow {
+    width: 36px;
+    height: 36px;
+
+    font-size: 20px;
+
+    margin-left: 15px;
+  }
+
+  .pilot-card {
+    padding: 22px;
+  }
+
+  .pilot-card-top {
+    flex-direction: column;
+  }
+
+}

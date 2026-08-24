@@ -1,0 +1,393 @@
+
+.dashboard-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+.dashboard-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  color: #071d49;
+  font-size: 46px;
+  margin: 12px 0 18px;
+}
+
+.dashboard-header p:last-child {
+  color: #666;
+  font-size: 17px;
+}
+
+
+/* =========================
+   PILOT STATISTICS
+========================= */
+
+.dashboard-stats {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.stat-card {
+  background-color: white;
+
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+
+  padding: 24px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card span {
+  display: block;
+
+  color: #999;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 12px;
+}
+
+.stat-card strong {
+  display: block;
+
+  color: #071d49;
+
+  font-size: 32px;
+
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  color: #777;
+
+  font-size: 13px;
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   DASHBOARD ACTIONS
+========================= */
+
+.dashboard-grid {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: white;
+
+  border: 1px solid #e3e7ee;
+
+  border-radius: 8px;
+
+  padding: 30px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card span {
+  color: #999;
+
+  font-size: 11px;
+
+  font-weight: bold;
+}
+
+.dashboard-card h2 {
+  color: #071d49;
+
+  margin: 15px 0 10px;
+}
+
+.dashboard-card p {
+  color: #777;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   ACTIVE FLIGHT
+========================= */
+
+.active-flight-section {
+  max-width: 1100px;
+
+  margin: 25px auto 0;
+
+  padding: 25px 30px;
+
+  background-color: white;
+
+  border: 1px solid #e3e7ee;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.active-flight-section > div > span {
+  color: #999;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+}
+
+.active-flight-section h2 {
+  color: #071d49;
+
+  margin: 8px 0 5px;
+
+  font-size: 22px;
+}
+
+.active-flight-section p {
+  color: #777;
+
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.dashboard-action-button {
+  display: inline-block;
+
+  padding: 11px 18px;
+
+  background-color: #071d49;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dashboard-action-button:hover {
+  background-color: #0d2d6b;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .dashboard-stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .dashboard-page {
+    padding: 60px 5%;
+  }
+
+  .dashboard-header h1 {
+    font-size: 36px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns:
+      1fr;
+  }
+
+  .active-flight-section {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}/* =========================
+   PILOT STATISTICS
+========================= */
+
+.pilot-statistics {
+  max-width: 1375px;
+  margin: 0 auto 55px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e1e5eb;
+  border-radius: 9px;
+  padding: 26px 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 120px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ICON CIRCLE */
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eef2f8;
+
+  color: #071d49;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 1;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* STAT TEXT */
+
+.stat-card p {
+  margin: 0 0 6px;
+
+  color: #777;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.stat-card h2 {
+  margin: 0;
+
+  color: #071d49;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .pilot-statistics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pilot-statistics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   STAT ICON FIX
+========================= */
+
+.stat-card .stat-icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 50%;
+  background-color: #eef2f8;
+
+  color: #071d49;
+  font-size: 22px;
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: 0;
+}

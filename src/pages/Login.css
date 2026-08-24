@@ -1,0 +1,526 @@
+/* ==========================================
+   LOGIN PAGE
+========================================== */
+
+.login-page {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  position: relative;
+  overflow: hidden;
+
+  background-color: #071d49;
+}
+
+
+/* ==========================================
+   FULL BACKGROUND FLIGHT IMAGE
+========================================== */
+
+.login-background-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center center;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   BACKGROUND DARK OVERLAY
+========================================== */
+
+.login-background-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 29, 73, 0.82),
+      rgba(7, 29, 73, 0.45),
+      rgba(0, 0, 0, 0.60)
+    );
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.login-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 450px;
+
+  background-color: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 10px;
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35);
+
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   BA MAIN LOGO INSIDE LOGIN CARD
+========================================== */
+
+.login-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  background-image: url("../assets/ba-main-logo.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  opacity: 0.16;
+
+  left: 50%;
+  top: 35%;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.login-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ==========================================
+   LOGIN TITLE
+========================================== */
+
+.login-card h1 {
+  color: #071d49;
+
+  font-size: 36px;
+
+  margin: 12px 0;
+}
+
+
+/* ==========================================
+   SECTION TAG
+========================================== */
+
+.section-tag {
+  color: #071d49;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 12px;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.login-description {
+  color: #555;
+
+  margin-bottom: 35px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   INPUT FIELDS
+========================================== */
+
+.login-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+
+.login-field label {
+  color: #071d49;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+
+.login-field input {
+  padding: 13px 14px;
+
+  border: 1px solid #d9dee7;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-field input:focus {
+  border-color: #071d49;
+
+  box-shadow:
+    0 0 0 3px rgba(7, 29, 73, 0.08);
+}
+
+
+/* ==========================================
+   LOGIN ERROR
+========================================== */
+
+.login-error {
+  background-color: #fff0f0;
+
+  border: 1px solid #f0cccc;
+
+  color: #a33;
+
+  padding: 12px;
+
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   BA GRADIENT ANIMATION
+========================================== */
+
+@keyframes baGradientSweep {
+
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+
+}
+
+
+/* ==========================================
+   SIGN IN BUTTON
+========================================== */
+
+.login-button {
+  width: 100%;
+
+  padding: 14px;
+
+  background: #071d49;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  background-size: 300% 100%;
+}
+
+
+/* ==========================================
+   SIGN IN BUTTON HOVER
+========================================== */
+
+.login-button:hover {
+
+  background-image:
+    linear-gradient(
+      110deg,
+
+      #071d49 0%,
+
+      #071d49 25%,
+
+      #2455a4 45%,
+
+      #e85d2a 65%,
+
+      #2455a4 82%,
+
+      #071d49 100%
+    );
+
+  animation:
+    baGradientSweep 0.8s ease forwards;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(7, 29, 73, 0.30);
+}
+
+
+/* ==========================================
+   SIGN IN BUTTON ACTIVE
+========================================== */
+
+.login-button:active {
+
+  transform:
+    translateY(0);
+
+  box-shadow:
+    0 5px 12px rgba(7, 29, 73, 0.20);
+}
+
+
+/* ==========================================
+   SIGN IN BUTTON DISABLED
+========================================== */
+
+.login-button:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+
+  animation: none;
+}
+
+
+/* ==========================================
+   REGISTER / JOIN SECTION
+========================================== */
+
+.login-register {
+
+  margin-top: 30px;
+
+  padding-top: 25px;
+
+  border-top:
+    1px solid #e3e7ee;
+
+  text-align: center;
+}
+
+
+.login-register p {
+
+  margin: 0 0 12px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   JOIN BA VIRTUAL BUTTON
+========================================== */
+
+.register-link {
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  background: #071d49;
+
+  color: white;
+
+  border:
+    1px solid #071d49;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  background-size: 300% 100%;
+}
+
+
+/* ==========================================
+   JOIN BUTTON HOVER
+========================================== */
+
+.register-link:hover {
+
+  background-image:
+    linear-gradient(
+      110deg,
+
+      #071d49 0%,
+
+      #071d49 25%,
+
+      #2455a4 45%,
+
+      #e85d2a 65%,
+
+      #2455a4 82%,
+
+      #071d49 100%
+    );
+
+  animation:
+    baGradientSweep 0.8s ease forwards;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(7, 29, 73, 0.25);
+}
+
+
+/* ==========================================
+   JOIN BUTTON ACTIVE
+========================================== */
+
+.register-link:active {
+
+  transform:
+    translateY(0);
+
+  box-shadow:
+    0 5px 12px rgba(7, 29, 73, 0.18);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 500px) {
+
+  .login-card {
+
+    padding:
+      30px 22px;
+  }
+
+
+  .login-card h1 {
+
+    font-size: 30px;
+  }
+
+
+ .login-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background-image:
+    url("../assets/ba-main-logo.jpg");
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: contain;
+
+  opacity: 0.15;
+
+  left: 50%;
+  top: 42%;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+  .login-background-image {
+
+    object-position:
+      center center;
+  }
+
+}

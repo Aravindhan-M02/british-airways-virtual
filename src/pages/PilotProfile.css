@@ -1,0 +1,106 @@
+.pilot-profile-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+.profile-header {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  color: #071d49;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.profile-id {
+  color: #888;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.profile-header h1 {
+  color: #071d49;
+  font-size: 56px;
+  margin: 12px 0 5px;
+}
+
+.profile-header p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.profile-status {
+  display: inline-block;
+  color: #287a45;
+  background-color: #e9f6ed;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.profile-stats {
+  max-width: 900px;
+  margin: 60px auto 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.profile-stat {
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+}
+
+.profile-stat span {
+  display: block;
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.profile-stat strong {
+  color: #071d49;
+  font-size: 28px;
+}
+
+.profile-details {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.profile-details span {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.profile-details p {
+  color: #071d49;
+  font-weight: 500;
+  margin-top: 8px;
+}

@@ -1,0 +1,513 @@
+{
+  "pilots": [
+    {
+      "pilotId": "BAW001",
+      "name": "Aravindh",
+      "email": "aravindh@example.com",
+      "password": "TEST_ONLY",
+      "rank": "Captain",
+      "hours": 189.53,
+      "flights": 26,
+      "status": "Active",
+      "joinedDate": "2026-07-13",
+      "id": "URLCFpu0oEQ"
+    },
+    {
+      "pilotId": "BAW002",
+      "name": "Dexter",
+      "email": "dexter_example@gmail.com",
+      "password": "Dexter@123",
+      "rank": "Cadet",
+      "hours": 21,
+      "flights": 1,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "0p_zrILwKvg"
+    },
+    {
+      "pilotId": "BAW003",
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "rank": "Cadet",
+      "hours": 0,
+      "flights": 0,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "GIK89gyjZM8"
+    },
+    {
+      "pilotId": "BAW004",
+      "name": "Ezio",
+      "email": "ezio@example.com",
+      "password": "Ezio\"123",
+      "rank": "Cadet",
+      "hours": 0,
+      "flights": 0,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "OYIwzF0LuAU"
+    },
+    {
+      "pilotId": "BAW005",
+      "name": "Shinchan",
+      "email": "shinchan44221@gmail.com",
+      "password": "Shinchan@123",
+      "rank": "Cadet",
+      "hours": 15,
+      "flights": 2,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "b7MQqbI-CfY"
+    },
+    {
+      "pilotId": "BAW006",
+      "name": "Giri",
+      "email": "giri@example.com",
+      "password": "Giri@123",
+      "rank": "Cadet",
+      "hours": 0,
+      "flights": 0,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "KVNucUtOpcw"
+    },
+    {
+      "pilotId": "BAW007",
+      "name": "Dinesh",
+      "email": "dinesh@example.com",
+      "password": "Dinesh@123",
+      "rank": "Cadet",
+      "hours": 0,
+      "flights": 0,
+      "status": "Active",
+      "joinedDate": "2026-08-23",
+      "id": "FHuDuLHbHXo"
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "date": "23 AUG 2026",
+      "title": "British Airways Virtual is now open",
+      "description": "Welcome to British Airways Virtual. Join our growing community of Infinite Flight pilots and start your journey with us."
+    },
+    {
+      "id": "2",
+      "date": "22 AUG 2026",
+      "title": "New routes coming soon",
+      "description": "Our route network is expanding. Stay tuned as we introduce new destinations across the world."
+    },
+    {
+      "id": "3",
+      "date": "20 AUG 2026",
+      "title": "BA Virtual operations update",
+      "description": "We're working on new flight schedules and operational features for our pilots."
+    }
+  ],
+  "flights": [
+    {
+      "id": "BA001",
+      "flightNumber": "BA001",
+      "departure": "EGLL",
+      "arrival": "KJFK",
+      "aircraft": "Airbus A350-1000",
+      "status": "Scheduled",
+      "departureTime": "10:30",
+      "arrivalTime": "13:15"
+    },
+    {
+      "id": "BA002",
+      "flightNumber": "BA002",
+      "departure": "EGLL",
+      "arrival": "OMDB",
+      "aircraft": "Airbus A380",
+      "status": "Scheduled",
+      "departureTime": "14:00",
+      "arrivalTime": "00:05"
+    },
+    {
+      "id": "BA003",
+      "flightNumber": "BA003",
+      "departure": "EGLL",
+      "arrival": "VABB",
+      "aircraft": "Boeing 787-9",
+      "status": "Scheduled",
+      "departureTime": "21:30",
+      "arrivalTime": "11:00"
+    }
+  ],
+  "applications": [
+    {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "password": "something123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "Rb6tn1SLHXE"
+    },
+    {
+      "name": "Dexter",
+      "email": "dexter_example@gmail.com",
+      "password": "dexter\"123321",
+      "status": "Rejected",
+      "appliedDate": "2026-08-23",
+      "id": "Fc7HkMDs5XI"
+    },
+    {
+      "name": "Ezio",
+      "email": "ezio@example.com",
+      "password": "Ezio\"123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "n9hdJBDTkSM"
+    },
+    {
+      "name": "Shinchan",
+      "email": "shinchan44221@gmail.com",
+      "password": "Shinchan@123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "e4py0QG9nb4"
+    },
+    {
+      "name": "Giri",
+      "email": "giri@example.com",
+      "password": "Giri@123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "z0Wl04ypnks"
+    },
+    {
+      "name": "Giri",
+      "email": "giri@example.com",
+      "password": "Giri@123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "8dzZR0XYONM"
+    },
+    {
+      "name": "Dinesh",
+      "email": "dinesh@example.com",
+      "password": "Dinesh@123",
+      "status": "Approved",
+      "appliedDate": "2026-08-23",
+      "id": "SSL7wTFDtc4"
+    }
+  ],
+  "bookings": [
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW001",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T19:05:41.284Z",
+      "id": "izGkx0havxg"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW004",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T19:49:30.043Z",
+      "id": "583AZ122c_c"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW001",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T20:04:05.683Z",
+      "id": "erMzf_UB7c0"
+    },
+    {
+      "flightId": "BA002",
+      "pilotId": "BAW001",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T20:21:01.277Z",
+      "id": "UcLns7FBoEM"
+    },
+    {
+      "flightId": "BA003",
+      "pilotId": "BAW001",
+      "status": "Booked",
+      "bookedDate": "2026-08-23T20:24:21.100Z",
+      "id": "X7XWyJPKWAQ"
+    },
+    {
+      "flightId": "BA003",
+      "pilotId": "BAW004",
+      "status": "Denied",
+      "bookedDate": "2026-08-23T20:31:08.971Z",
+      "id": "1RVXBXdqQP4"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW005",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T21:37:11.383Z",
+      "id": "g2qqaICyLKQ"
+    },
+    {
+      "flightId": "BA002",
+      "pilotId": "BAW005",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T21:48:23.258Z",
+      "id": "O4g5ocaLRX0"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW005",
+      "status": "Denied",
+      "bookedDate": "2026-08-23T21:50:06.496Z",
+      "id": "AxMmouk1Q04"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW005",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T21:52:27.274Z",
+      "id": "sOzUa3RaqpY"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW002",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T21:56:25.105Z",
+      "id": "9NDOzM83MPU"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW006",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T23:39:19.437Z",
+      "id": "LxuIFt_NYcU"
+    },
+    {
+      "flightId": "BA003",
+      "pilotId": "BAW007",
+      "status": "Completed",
+      "bookedDate": "2026-08-23T23:51:06.697Z",
+      "id": "I-6OCg6RlI8"
+    },
+    {
+      "flightId": "BA001",
+      "pilotId": "BAW007",
+      "status": "Denied",
+      "bookedDate": "2026-08-23T23:57:00.684Z",
+      "id": "ta8gQA4KEIY"
+    }
+  ],
+  "pireps": [
+    {
+      "pilotId": "BAW001",
+      "bookingId": "izGkx0havxg",
+      "flightId": "BA001",
+      "departureTime": "18:00",
+      "arrivalTime": "20:03",
+      "flightTime": 123,
+      "flightBonus": "No",
+      "originalFlightTime": 165,
+      "comments": "",
+      "status": "Completed",
+      "filedDate": "2026-08-23T19:08:19.671Z",
+      "id": "ANvgiL4AJSQ"
+    },
+    {
+      "pilotId": "BAW001",
+      "bookingId": "erMzf_UB7c0",
+      "flightId": "BA001",
+      "departureDate": "2026-08-23",
+      "departureTime": "18:00",
+      "arrivalDate": "2026-08-24",
+      "arrivalTime": "20:47",
+      "flightTime": 1607,
+      "flightBonus": "No",
+      "originalFlightTime": 490,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T20:18:06.200Z",
+      "id": "iETRwI-v5hM"
+    },
+    {
+      "pilotId": "BAW001",
+      "bookingId": "UcLns7FBoEM",
+      "flightId": "BA002",
+      "departureDate": "2026-08-24",
+      "departureTime": "14:40",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "00:12",
+      "flightTime": 572,
+      "flightBonus": "No",
+      "originalFlightTime": 558,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T20:23:36.322Z",
+      "id": "lNCRaFCb0a0"
+    },
+    {
+      "pilotId": "BAW001",
+      "bookingId": "X7XWyJPKWAQ",
+      "flightId": "BA003",
+      "departureDate": "2026-08-24",
+      "departureTime": "18:18",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "08:27",
+      "flightTime": 849,
+      "flightBonus": "No",
+      "originalFlightTime": 849,
+      "comments": "",
+      "status": "Denied",
+      "filedDate": "2026-08-23T20:26:01.044Z",
+      "id": "C3TyaT6I0xQ"
+    },
+    {
+      "pilotId": "BAW004",
+      "bookingId": "1RVXBXdqQP4",
+      "flightId": "BA003",
+      "departureDate": "2026-08-24",
+      "departureTime": "18:01",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "08:03",
+      "flightTime": 842,
+      "flightBonus": "No",
+      "originalFlightTime": 842,
+      "comments": "",
+      "status": "Denied",
+      "filedDate": "2026-08-23T20:32:13.066Z",
+      "id": "65K0Tk8-i8o"
+    },
+    {
+      "pilotId": "BAW005",
+      "bookingId": "g2qqaICyLKQ",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "17:07",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "02:07",
+      "flightTime": 540,
+      "flightBonus": "No",
+      "originalFlightTime": 540,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T21:38:04.934Z",
+      "id": "SlTp-C4n9VM"
+    },
+    {
+      "pilotId": "BAW005",
+      "bookingId": "O4g5ocaLRX0",
+      "flightId": "BA002",
+      "departureDate": "2026-08-24",
+      "departureTime": "18:18",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "00:18",
+      "flightTime": 360,
+      "flightBonus": "No",
+      "originalFlightTime": 360,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T21:48:58.704Z",
+      "id": "IT0q_GkcUWI",
+      "reviewComment": "Thank For Your Flight !"
+    },
+    {
+      "pilotId": "BAW005",
+      "bookingId": "AxMmouk1Q04",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "15:20",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "03:20",
+      "flightTime": 720,
+      "flightBonus": "No",
+      "originalFlightTime": 720,
+      "comments": "",
+      "status": "Denied",
+      "filedDate": "2026-08-23T21:51:06.996Z",
+      "id": "wjPE-000-g8",
+      "reviewComment": "Please Calculate the Actual Time for DEP @ ARR"
+    },
+    {
+      "pilotId": "BAW005",
+      "bookingId": "sOzUa3RaqpY",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "15:23",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "03:23",
+      "flightTime": 720,
+      "flightBonus": "No",
+      "originalFlightTime": 720,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T21:54:04.377Z",
+      "id": "V-J8ASZUi6A",
+      "reviewComment": "Thank You For Your Flight !"
+    },
+    {
+      "pilotId": "BAW002",
+      "bookingId": "9NDOzM83MPU",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "03:26",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "00:26",
+      "flightTime": 1260,
+      "flightBonus": "No",
+      "originalFlightTime": 1260,
+      "comments": "",
+      "status": "Approved",
+      "filedDate": "2026-08-23T21:57:27.990Z",
+      "id": "h2AeyFce0WY",
+      "reviewComment": "Thank You For Your Flight !"
+    },
+    {
+      "pilotId": "BAW006",
+      "bookingId": "LxuIFt_NYcU",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "18:09",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "08:09",
+      "flightTime": 840,
+      "flightBonus": "No",
+      "originalFlightTime": 840,
+      "comments": "No Flight Bonus Used",
+      "status": "Approved",
+      "filedDate": "2026-08-23T23:40:26.918Z",
+      "id": "aD6m_E3H9cc",
+      "reviewComment": "Thank You For Your Flight ! - CEO"
+    },
+    {
+      "pilotId": "BAW007",
+      "bookingId": "I-6OCg6RlI8",
+      "flightId": "BA003",
+      "departureDate": "2026-08-24",
+      "departureTime": "05:21",
+      "arrivalDate": "2026-08-25",
+      "arrivalTime": "01:21",
+      "flightTime": 1200,
+      "flightBonus": "No",
+      "originalFlightTime": 657,
+      "comments": "No bonus Used ",
+      "status": "Approved",
+      "filedDate": "2026-08-23T23:52:15.469Z",
+      "id": "DAHGWWXJIwg",
+      "reviewComment": "Thank You For Your Flight ! - CEO"
+    },
+    {
+      "pilotId": "BAW007",
+      "bookingId": "ta8gQA4KEIY",
+      "flightId": "BA001",
+      "departureDate": "2026-08-24",
+      "departureTime": "05:27",
+      "arrivalDate": "2026-08-24",
+      "arrivalTime": "15:27",
+      "flightTime": 600,
+      "flightBonus": "No",
+      "originalFlightTime": 600,
+      "comments": "",
+      "status": "Denied",
+      "filedDate": "2026-08-23T23:57:39.592Z",
+      "id": "aTVvCcZ4TJM",
+      "reviewComment": "Please Enter the Exact Time of Flight - CEO"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

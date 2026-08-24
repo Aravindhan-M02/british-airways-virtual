@@ -1,0 +1,301 @@
+.admin-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+.admin-header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.admin-header h1 {
+  color: #071d49;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.admin-header > p:last-child {
+  color: #666;
+  font-size: 17px;
+}
+
+.admin-stats {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.admin-stat {
+  background-color: white;
+  padding: 35px;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.admin-stat span {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.admin-stat strong {
+  display: block;
+  color: #071d49;
+  font-size: 42px;
+}
+.applications-section {
+  max-width: 1000px;
+  margin: 70px auto 0;
+}
+
+.applications-heading {
+  margin-bottom: 30px;
+}
+
+.applications-heading h2 {
+  color: #071d49;
+  font-size: 34px;
+  margin-top: 10px;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.application-card {
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  padding: 25px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 30px;
+}
+
+.application-info h3 {
+  color: #071d49;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.application-info p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.application-info span {
+  color: #999;
+  font-size: 13px;
+}
+
+.application-status {
+  background-color: #fff4d6;
+  color: #9a6b00;
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.application-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.application-actions button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.approve-button {
+  background-color: #071d49;
+  color: white;
+}
+
+.approve-button:hover {
+  background-color: #0d2d6b;
+}
+
+.reject-button {
+  background-color: #f1f1f1;
+  color: #b3261e;
+}
+
+.reject-button:hover {
+  background-color: #e5e5e5;
+}
+
+.no-applications {
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+/* ==========================================
+   ADMIN PIREP SECTION
+========================================== */
+
+.pirep-admin-section {
+  margin-top: 50px;
+}
+
+
+/* ==========================================
+   PILOT MANAGEMENT
+========================================== */
+
+.pilot-management-section {
+  margin-top: 50px;
+}
+
+
+/* ==========================================
+   PIREP CARD
+========================================== */
+
+.pirep-card {
+  align-items: center;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.application-status.pending {
+  color: #b7791f;
+  background: #fff8e1;
+  border: 1px solid #f0d98c;
+}
+
+.application-status.active {
+  color: #1f7a4d;
+  background: #eaf7ef;
+  border: 1px solid #b8dfc7;
+}
+
+
+/* ==========================================
+   DELETE PILOT
+========================================== */
+
+.delete-pilot-button {
+  border: 1px solid #d64545;
+  background: white;
+  color: #c53030;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-pilot-button:hover {
+  background: #c53030;
+  color: white;
+}
+
+
+/* ==========================================
+   PILOT ADMIN CARD
+========================================== */
+
+.pilot-admin-card {
+  align-items: center;
+}
+
+.pilot-admin-card .application-info span {
+  display: block;
+  margin-top: 4px;
+}
+
+
+/* ==========================================
+   ADMIN ACTION BUTTONS
+========================================== */
+
+.application-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.approve-button,
+.reject-button,
+.delete-pilot-button {
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .application-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .application-actions {
+    width: 100%;
+  }
+
+  .application-actions button {
+    flex: 1;
+  }
+
+}
+.pirep-review {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pirep-comment-input {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.pirep-comment-input:focus {
+  outline: none;
+  border-color: #1d4ed8;
+}
+
+.manager-comment {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-left: 3px solid currentColor;
+}
+
+.manager-comment strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.manager-comment p {
+  margin: 0;
+}

@@ -1,0 +1,119 @@
+.flights-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+.flights-header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.flights-header h1 {
+  color: #071d49;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.flights-header > p:last-child {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.flights-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flights-table {
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flight-table-header,
+.flight-row {
+  display: grid;
+  grid-template-columns:
+    0.8fr
+    1.4fr
+    1.5fr
+    1fr
+    0.7fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 25px;
+}
+
+.flight-table-header {
+  background-color: #071d49;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.flight-row {
+  border-bottom: 1px solid #edf0f4;
+}
+
+.flight-row:last-child {
+  border-bottom: none;
+}
+
+.flight-row:hover {
+  background-color: #fafbfd;
+}
+
+.flight-number {
+  color: #071d49;
+  font-weight: bold;
+}
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #071d49;
+}
+
+.flight-route span {
+  color: #999;
+}
+
+.flight-aircraft {
+  color: #555;
+}
+
+.flight-status {
+  display: inline-block;
+  background-color: #e9f6ed;
+  color: #287a45;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.flight-view {
+  color: #071d49;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.flight-view:hover {
+  text-decoration: underline;
+}
+
+.flights-message {
+  background-color: white;
+  border: 1px solid #e3e7ee;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  color: #777;
+}

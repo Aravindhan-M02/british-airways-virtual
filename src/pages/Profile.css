@@ -1,0 +1,238 @@
+.profile-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f4f6fa;
+  padding: 80px 8%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.profile-header {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.profile-header h1 {
+  color: #071d49;
+  font-size: 48px;
+  margin: 12px 0 15px;
+}
+
+.profile-header p:last-child {
+  color: #666;
+  font-size: 16px;
+}
+
+.section-tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+  margin: 0;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+  max-width: 1050px;
+  margin: 0 auto 25px;
+  background: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   IDENTITY
+========================= */
+
+.profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.pilot-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #071d49;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.profile-label {
+  margin: 0 0 3px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #999;
+}
+
+.profile-identity h2 {
+  margin: 0;
+  color: #071d49;
+  font-size: 25px;
+}
+
+.pilot-id {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-size: 13px;
+}
+
+.active-status {
+  margin-left: auto;
+  color: #287a45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding-top: 25px;
+}
+
+.profile-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-details span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #999;
+}
+
+.profile-details strong {
+  color: #071d49;
+  font-size: 14px;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.profile-statistics {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.profile-stat-card {
+  background: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-stat-card > span {
+  font-size: 25px;
+  color: #071d49;
+}
+
+.profile-stat-card p {
+  margin: 0 0 5px;
+  color: #777;
+  font-size: 12px;
+}
+
+.profile-stat-card h2 {
+  margin: 0;
+  color: #071d49;
+  font-size: 22px;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.profile-back {
+  max-width: 1050px;
+  margin: 25px auto 0;
+}
+
+.profile-back a {
+  color: #071d49;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-back a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .profile-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-statistics {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .profile-page {
+    padding: 60px 5%;
+  }
+
+  .profile-header h1 {
+    font-size: 40px;
+  }
+
+  .profile-card {
+    padding: 22px;
+  }
+
+  .profile-identity {
+    flex-wrap: wrap;
+  }
+
+  .active-status {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+
+}
