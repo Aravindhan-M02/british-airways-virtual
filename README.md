@@ -148,7 +148,7 @@ git clone https://github.com/Aravindhan-M02/british-airways-virtual.git
 
 ---
 
-## 📸## 📸 Screenshots
+##  📸 Screenshots
 
 ### 🏠 Home
 
