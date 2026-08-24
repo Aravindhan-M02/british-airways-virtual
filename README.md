@@ -62,68 +62,42 @@ The platform also includes an administrative interface for managing pilots, appl
 ### Frontend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=react,js,html,css,vite" />
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap" />
 </p>
 
 ### API & Data
 
-<p>
-  <img src="https://skillicons.dev/icons?i=json" />
-</p>
-
-- **REST API**
-- **JSON Server**
-- **Fetch API**
+**REST API** • **JSON Server** • **Fetch API**
 
 ### Development Tools
 
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,idea" />
 </p>
-
-- Git
-- GitHub
-- Visual Studio Code
 
 ---
 
 ## 📁 Project Structure
 
-````text
+```text
 british-airways-virtual/
 │
 ├── public/
 │   ├── favicon.svg
-│   └── icons.svg
+│   ├── icons.svg
+│   └── screenshots/
+│       ├── ba-home.png
+│       ├── ba-flight-schedule.png
+│       ├── ba-my-flights.png
+│       ├── ba-my-flights-comment.png
+│       ├── ba-admin-dashboard.png
+│       └── ba-admin-preview.png
 │
 ├── src/
 │   ├── assets/
-│   │
 │   ├── components/
-│   │   ├── AdminLayout.jsx
-│   │   ├── AdminNavbar.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── PublicLayout.jsx
-│   │   └── ScrollReveal.jsx
-│   │
 │   ├── pages/
-│   │   ├── About.jsx
-│   │   ├── Admin.jsx
-│   │   ├── Dashboard.jsx
-│   │   ├── FlightDetails.jsx
-│   │   ├── Flights.jsx
-│   │   ├── Home.jsx
-│   │   ├── Login.jsx
-│   │   ├── MyFlights.jsx
-│   │   ├── PilotProfile.jsx
-│   │   ├── Pilots.jsx
-│   │   ├── Pirep.jsx
-│   │   ├── Profile.jsx
-│   │   └── Register.jsx
-│   │
 │   ├── services/
-│   │   └── pilotService.js
-│   │
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
@@ -134,6 +108,7 @@ british-airways-virtual/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+```
 
 ---
 
@@ -143,12 +118,45 @@ british-airways-virtual/
 
 ```bash
 git clone https://github.com/Aravindhan-M02/british-airways-virtual.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd british-airways-virtual
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start JSON Server
+
+```bash
+npx json-server --watch db.json --port 3000
+```
+
+The API will be available at:
+
+```text
+http://localhost:3000
+```
+
+### 5. Start the React application
+
+Open another terminal and run:
+
+```bash
+npm run dev
+```
+
+Vite will provide the local development URL in the terminal.
 
 ---
 
----
-
-##  📸 Screenshots
+## 📸 Screenshots
 
 ### 🏠 Home
 
@@ -174,7 +182,15 @@ git clone https://github.com/Aravindhan-M02/british-airways-virtual.git
 
 ![British Airways Virtual Admin Preview](public/screenshots/ba-admin-preview.png)
 
+---
 
+## 🌐 Live Demo
+
+🚧 **Coming soon**
+
+The project is currently running locally with React, Vite, and JSON Server.
+
+---
 
 ## 📌 Project Status
 
@@ -195,4 +211,3 @@ Full Stack Developer
 ---
 
 ⭐ If you find this project interesting, consider giving it a star!
-````
