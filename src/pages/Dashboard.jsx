@@ -28,8 +28,8 @@ function Dashboard() {
         // ==========================================
 
         const bookingResponse = await fetch(
-          `http://localhost:3000/bookings?pilotId=${encodeURIComponent(
-            pilot.pilotId
+          `${import.meta.env.VITE_API_URL}/bookings?pilotId=${encodeURIComponent(
+  pilot.pilotId
           )}`
         );
 
@@ -48,8 +48,8 @@ function Dashboard() {
           await Promise.all(
             bookingData.map(async (booking) => {
               const flightResponse = await fetch(
-                `http://localhost:3000/flights/${booking.flightId}`
-              );
+  `${import.meta.env.VITE_API_URL}/flights/${booking.flightId}`
+);
 
               if (!flightResponse.ok) {
                 return {
@@ -75,9 +75,9 @@ function Dashboard() {
         // ==========================================
 
         const pirepResponse = await fetch(
-          `http://localhost:3000/pireps?pilotId=${encodeURIComponent(
-            pilot.pilotId
-          )}`
+          `${import.meta.env.VITE_API_URL}/pireps?pilotId=${encodeURIComponent(
+  pilot.pilotId
+)}`
         );
 
         if (!pirepResponse.ok) {

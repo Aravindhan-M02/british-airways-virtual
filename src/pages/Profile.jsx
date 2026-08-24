@@ -27,7 +27,7 @@ function Profile() {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/pilots?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/pilots?pilotId=${encodeURIComponent(
             storedPilot.pilotId
           )}`
         );
@@ -70,7 +70,7 @@ function Profile() {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/bookings?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/bookings?pilotId=${encodeURIComponent(
             pilot.pilotId
           )}`
         );
@@ -109,7 +109,7 @@ function Profile() {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/pireps?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/pireps?pilotId=${encodeURIComponent(
             pilot.pilotId
           )}`
         );

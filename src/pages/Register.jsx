@@ -31,7 +31,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/applications",
+        `${import.meta.env.VITE_API_URL}/applications`,
         {
           method: "POST",
           headers: {

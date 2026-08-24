@@ -9,7 +9,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/news")
+    fetch(`${import.meta.env.VITE_API_URL}/news`)
       .then((response) => response.json())
       .then((data) => setNews(data))
       .catch((error) =>

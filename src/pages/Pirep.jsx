@@ -63,7 +63,7 @@ function Pirep() {
         // ==========================================
 
         const bookingResponse = await fetch(
-          `http://localhost:3000/bookings/${bookingId}`
+          `${import.meta.env.VITE_API_URL}/bookings/${bookingId}`
         );
 
         if (!bookingResponse.ok) {
@@ -102,7 +102,7 @@ function Pirep() {
         // ==========================================
 
         const flightResponse = await fetch(
-          `http://localhost:3000/flights/${bookingData.flightId}`
+          `${import.meta.env.VITE_API_URL}/flights/${bookingData.flightId}`
         );
 
         if (!flightResponse.ok) {
@@ -325,7 +325,7 @@ function Pirep() {
       // ==========================================
 
       const response = await fetch(
-        "http://localhost:3000/pireps",
+        `${import.meta.env.VITE_API_URL}/pireps`,
         {
           method: "POST",
 

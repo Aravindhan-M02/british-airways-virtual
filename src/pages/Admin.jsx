@@ -29,10 +29,10 @@ function Admin() {
         flightsResponse,
         pirepsResponse,
       ] = await Promise.all([
-        fetch("http://localhost:3000/pilots"),
-        fetch("http://localhost:3000/applications"),
-        fetch("http://localhost:3000/flights"),
-        fetch("http://localhost:3000/pireps"),
+        fetch(`${import.meta.env.VITE_API_URL}/pilots`),
+fetch(`${import.meta.env.VITE_API_URL}/applications`),
+fetch(`${import.meta.env.VITE_API_URL}/flights`),
+fetch(`${import.meta.env.VITE_API_URL}/pireps`),
       ]);
 
       if (
@@ -80,8 +80,8 @@ function Admin() {
   const approveApplication = async (application) => {
     try {
       const pilotResponse = await fetch(
-        "http://localhost:3000/pilots"
-      );
+  `${import.meta.env.VITE_API_URL}/pilots`
+);
 
       const pilotsData = await pilotResponse.json();
 
@@ -122,8 +122,7 @@ function Admin() {
           .split("T")[0],
       };
 
-      const createPilotResponse = await fetch(
-        "http://localhost:3000/pilots",
+      const createPilotResponse = await fetch(`${import.meta.env.VITE_API_URL}/pilots`,
         {
           method: "POST",
 
@@ -146,8 +145,8 @@ function Admin() {
       // ==========================================
 
       const updateApplicationResponse = await fetch(
-        `http://localhost:3000/applications/${application.id}`,
-        {
+  `${import.meta.env.VITE_API_URL}/applications/${application.id}`,
+  {
           method: "PATCH",
 
           headers: {
@@ -195,7 +194,7 @@ function Admin() {
   const rejectApplication = async (application) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/applications/${application.id}`,
+  `${import.meta.env.VITE_API_URL}/applications/${application.id}`,
         {
           method: "PATCH",
 
@@ -246,7 +245,7 @@ function Admin() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/pilots/${pilot.id}`,
+  `${import.meta.env.VITE_API_URL}/pilots/${pilot.id}`,
         {
           method: "DELETE",
         }
@@ -291,10 +290,10 @@ function Admin() {
       // ==========================================
 
       const pilotResponse = await fetch(
-        `http://localhost:3000/pilots?pilotId=${encodeURIComponent(
-          pirep.pilotId
-        )}`
-      );
+  `${import.meta.env.VITE_API_URL}/pilots?pilotId=${encodeURIComponent(
+    pirep.pilotId
+  )}`
+);
 
       if (!pilotResponse.ok) {
         throw new Error(
@@ -318,8 +317,8 @@ function Admin() {
       // ==========================================
 
       const pirepResponse = await fetch(
-        `http://localhost:3000/pireps/${pirep.id}`,
-        {
+  `${import.meta.env.VITE_API_URL}/pireps/${pirep.id}`,
+  {
           method: "PATCH",
 
           headers: {
@@ -361,8 +360,8 @@ function Admin() {
 
       const updatePilotResponse =
         await fetch(
-          `http://localhost:3000/pilots/${pilot.id}`,
-          {
+  `${import.meta.env.VITE_API_URL}/pilots/${pilot.id}`,
+  {
             method: "PATCH",
 
             headers: {
@@ -392,8 +391,8 @@ function Admin() {
 
       const bookingResponse =
         await fetch(
-          `http://localhost:3000/bookings/${pirep.bookingId}`,
-          {
+  `${import.meta.env.VITE_API_URL}/bookings/${pirep.bookingId}`,
+  {
             method: "PATCH",
 
             headers: {
@@ -477,8 +476,8 @@ function Admin() {
       // ==========================================
 
       const pirepResponse = await fetch(
-        `http://localhost:3000/pireps/${pirep.id}`,
-        {
+  `${import.meta.env.VITE_API_URL}/pireps/${pirep.id}`,
+  {
           method: "PATCH",
 
           headers: {
@@ -511,8 +510,8 @@ function Admin() {
       //
 
       const bookingResponse = await fetch(
-        `http://localhost:3000/bookings/${pirep.bookingId}`,
-        {
+  `${import.meta.env.VITE_API_URL}/bookings/${pirep.bookingId}`,
+  {
           method: "PATCH",
 
           headers: {

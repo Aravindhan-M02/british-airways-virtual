@@ -48,7 +48,7 @@ function FlightDetails() {
     const loadFlight = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/flights/${flightId}`
+          `${import.meta.env.VITE_API_URL}/flights/${flightId}`
         );
 
         if (!response.ok) {
@@ -81,7 +81,7 @@ function FlightDetails() {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/bookings?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/bookings?pilotId=${encodeURIComponent(
             loggedInPilot.pilotId
           )}`
         );
@@ -201,7 +201,7 @@ function FlightDetails() {
     try {
 
       const response = await fetch(
-        "http://localhost:3000/bookings",
+        `${import.meta.env.VITE_API_URL}/bookings`,
         {
           method: "POST",
 

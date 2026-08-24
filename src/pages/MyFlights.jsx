@@ -23,7 +23,7 @@ function MyFlights() {
         // ==========================================
 
         const bookingResponse = await fetch(
-          `http://localhost:3000/bookings?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/bookings?pilotId=${encodeURIComponent(
             loggedInPilot.pilotId
           )}`
         );
@@ -51,7 +51,7 @@ function MyFlights() {
 
               const flightResponse =
                 await fetch(
-                  `http://localhost:3000/flights/${booking.flightId}`
+                  `${import.meta.env.VITE_API_URL}/flights/${booking.flightId}`
                 );
 
               let flight = null;
@@ -67,7 +67,7 @@ function MyFlights() {
 
               const pirepResponse =
                 await fetch(
-                  `http://localhost:3000/pireps?bookingId=${encodeURIComponent(
+                  `${import.meta.env.VITE_API_URL}/pireps?bookingId=${encodeURIComponent(
                     booking.id
                   )}`
                 );

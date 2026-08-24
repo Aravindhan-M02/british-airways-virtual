@@ -20,7 +20,7 @@ function Profile() {
       try {
 
         const response = await fetch(
-          `http://localhost:3000/pilots?pilotId=${encodeURIComponent(
+          `${import.meta.env.VITE_API_URL}/pilots?pilotId=${encodeURIComponent(
             loggedInPilot.pilotId
           )}`
         );

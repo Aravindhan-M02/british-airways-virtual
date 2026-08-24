@@ -7,7 +7,7 @@ function Flights() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/flights")
+    fetch(`${import.meta.env.VITE_API_URL}/flights`)
       .then((response) => response.json())
       .then((data) => {
         setFlights(data);

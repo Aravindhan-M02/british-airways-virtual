@@ -84,7 +84,7 @@ function Pilots() {
    */
 
   useEffect(() => {
-    fetch("http://localhost:3000/pilots")
+    fetch(`${import.meta.env.VITE_API_URL}/pilots`)
       .then((response) => response.json())
       .then((data) => setPilots(data))
       .catch((error) =>

@@ -21,7 +21,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/pilots?email=${encodeURIComponent(
+        `${import.meta.env.VITE_API_URL}/pilots?email=${encodeURIComponent(
           email.trim()
         )}`
       );
