@@ -89,7 +89,7 @@ The platform also includes an administrative interface for managing pilots, appl
 
 ## 📁 Project Structure
 
-```text
+````text
 british-airways-virtual/
 │
 ├── public/
@@ -146,6 +146,36 @@ git clone https://github.com/Aravindhan-M02/british-airways-virtual.git
 
 ---
 
+---
+
+## 📸## 📸 Screenshots
+
+### 🏠 Home
+
+![British Airways Virtual Home](public/screenshots/ba-home.png)
+
+### ✈️ Flight Schedule
+
+![British Airways Virtual Flight Schedule](public/screenshots/ba-flight-schedule.png)
+
+### 🧑‍✈️ My Flights
+
+![British Airways Virtual My Flights](public/screenshots/ba-my-flights.png)
+
+### 📝 Flight Comment / PIREP
+
+![British Airways Virtual Flight Comment](public/screenshots/ba-my-flights-comment.png)
+
+### 🛡️ Admin Dashboard
+
+![British Airways Virtual Admin Dashboard](public/screenshots/ba-admin-dashboard.png)
+
+### 👀 Admin Preview
+
+![British Airways Virtual Admin Preview](public/screenshots/ba-admin-preview.png)
+
+
+
 ## 📌 Project Status
 
 🚧 **Currently under development**
@@ -165,3 +195,4 @@ Full Stack Developer
 ---
 
 ⭐ If you find this project interesting, consider giving it a star!
+````
